@@ -1,1 +1,1 @@
-# Tuning the Collection API of Java
+# Tuning the Collections API of Java
