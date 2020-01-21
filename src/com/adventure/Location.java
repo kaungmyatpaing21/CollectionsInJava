@@ -12,6 +12,7 @@ public class Location {
         this.locationID = locationID;
         this.description = description;
         this.exits = new HashMap<String, Integer>();
+        this.exits.put("Q", 0);
     }
 
     public void addExit(String direction, int location){
@@ -27,6 +28,7 @@ public class Location {
     }
 
     public Map<String, Integer> getExits(){
+        // return just clone to protect real private data from modifying
         return new HashMap<String, Integer>(exits);
     }
 }
