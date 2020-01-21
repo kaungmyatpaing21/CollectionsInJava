@@ -15,6 +15,23 @@ public class MapProgram {
 
         System.out.println(strawHat.put("zoro", "the best swordman in the world."));
         System.out.println(strawHat.put("sanji", "black foot sanji"));
+        System.out.println(strawHat.put("usopp", "the sniper king"));
+        System.out.println(strawHat.put("nami", "the greatest navigator"));
+
+        strawHat.remove("nami");
+        if(strawHat.remove("luffy", "the sniper king")){
+            System.out.println("luffy removed.");
+        }else{
+            System.out.println("the selected key / value pair not found.");
+        }
+
+        System.out.println(strawHat.replace("luffy", "the 5th yonko"));
+        if(strawHat.replace("luffy", "The future pirate King.", "Son of Monkey D Dragon.")){
+            System.out.println("luffy desc replaced.");
+        }else{
+            System.out.println("luffy desc was not replaced.");
+        }
+
 
         for(String key : strawHat.keySet()){
             System.out.println(key + " " + strawHat.get(key));
