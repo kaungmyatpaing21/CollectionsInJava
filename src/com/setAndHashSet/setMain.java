@@ -28,13 +28,12 @@ public class setMain {
         for(int i: squares){
             System.out.println(i);
         }
-        System.out.println(".........");;
-        Set<String> words = new HashSet<>();
+        System.out.println(".........");
         String sentence = "one day in the year of the fox";
         String[] arrayWords = sentence.split(" ");
 
         // asList - convert array to collection
-        words.addAll(Arrays.asList(arrayWords));
+        Set<String> words = new HashSet<>(Arrays.asList(arrayWords));
         for(String s: words){
             System.out.println(s);
         }
