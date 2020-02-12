@@ -18,7 +18,7 @@ public class equalsAndHashCodeTest {
         ArrayList<Student> students = new ArrayList<Student>();
         students.add(alex1);
         System.out.println("ArrayList size: " + students.size());
-        System.out.println("ArrayList contains alex2: " + students.contains(alex2));
+        System.out.println("ArrayList contains alex2: " + students. contains(alex2));
         System.out.println("------------------------------------------------------");
 
         // Overriding HashCode
